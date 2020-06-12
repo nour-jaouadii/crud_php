@@ -22,7 +22,7 @@
      <h1 class="text-logo"><span class="glyphicon glyphicon-cutlery"></span>Crud php <span class="glyphicon glyphicon-cutlery"></span></h1>
     <div class="container admin">
        <div class="row"> 
-         <!-- <h1><strong>listes des items</strong><a  href="insert.php"  class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span> Ajouter</a></h1> -->
+         <h1><strong>listes des Produits</strong><a  href="insert.php"  class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus"></span> Ajouter</a></h1>
          
     <table class="table table-striped table-bordered">
     <thead>
@@ -60,11 +60,11 @@
 
         <td width=300>
                          
-          <a class="btn btn-default" href="views22.php?id='.$item['dmd'].'"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>
+          <a class="btn btn-default" href="views.php?id= <?php echo $item['id']; ?>"><span class="glyphicon glyphicon-eye-open"></span> Voir</a>
               
-                <a class="btn btn-primary" href="update.php?id='.$item['dmd'].'"><span class="glyphicon glyphicon-pencil"></span> Modifier</a>
+                <a class="btn btn-primary" href="update.php?id= <?php echo $item['id']; ?>"><span class="glyphicon glyphicon-pencil"></span> Modifier</a>
               
-          <a class="btn btn-danger" href="delete.php?id='.$item['dmd'].'"><span class="glyphicon glyphicon-remove"></span> Supprimer</a> 
+          <a class="btn btn-danger" href="delete.php?id='. $item['id'].'"><span class="glyphicon glyphicon-remove"></span> Supprimer</a> 
         </td>
       </tr>
       <?php  } ?>             
