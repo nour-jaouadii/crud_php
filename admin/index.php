@@ -64,7 +64,7 @@
               
                 <a class="btn btn-primary" href="update.php?id= <?php echo $item['id']; ?>"><span class="glyphicon glyphicon-pencil"></span> Modifier</a>
               
-          <a class="btn btn-danger" href="delete.php?id='. $item['id'].'"><span class="glyphicon glyphicon-remove"></span> Supprimer</a> 
+          <a class="btn btn-danger" href="delete.php?id=<?php echo $item['id']; ?>"><span class="glyphicon glyphicon-remove"></span> Supprimer</a> 
         </td>
       </tr>
       <?php  } ?>             
